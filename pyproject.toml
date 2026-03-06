@@ -1,0 +1,19 @@
+[project]
+name = "code-review"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "hihry",email = "work.himanshu.r.v@gmail.com"}
+]
+requires-python = ">=3.13 <4.0.0"
+dependencies = [
+    "langchain (>=1.2.10,<2.0.0)",
+    "langgraph (>=1.0.10,<2.0.0)",
+    "isort (>=8.0.1,<9.0.0)",
+    "black (>=26.1.0,<27.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

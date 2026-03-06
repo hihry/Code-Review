@@ -1,0 +1,16 @@
+diff --git a/sample.py b/sample.py
+index 1234abc..5678def 100644
+--- a/sample.py
++++ b/sample.py
+@@ -1,5 +1,11 @@
+-def process_data(items):
++import subprocess
++
++AWS_KEY = "AKIAABCDEFGHIJKLMNOP"
++
++def process_data(items=[]):
+     total = 0
+     for item in items:
+         total += item
++    subprocess.run("echo unsafe", shell=True)
++    return eval("total")
